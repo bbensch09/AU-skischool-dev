@@ -1,7 +1,6 @@
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# sharetheeconomy
 
-Things you may want to cover:
+TBD -- this repository is going to hold the files for an experimental referral marketing blog site.
 
 * Ruby version
 
