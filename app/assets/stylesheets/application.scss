@@ -45,11 +45,11 @@ $black: #0F0F0D;
 }
 
 .sticky-header {
-    top: 0;
+    /*top: 100px;*/
     left: 0;
     right: 0;
     z-index: 99;
-    position: fixed !important;
+    /*position: fixed !important;*/
 }
 .header-image{
   top:50px;

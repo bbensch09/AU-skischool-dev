@@ -7,13 +7,24 @@
     font-weight: 400;
 }
 
-.intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+.above-nav-header {
     text-align: center;
     color: #f8f8f8;
-    background: url("obama-romney-blurred.jpeg") no-repeat center center;
-    background-size: cover;
+    background: url("STE-header2.png") no-repeat center center;
+    /*background-size: cover;*/
+    height:100px;
+}
+.navbar {
+    margin-bottom: 0px !important;
+}
+.navbar-default, .container-nav {
+    background-color: #4285f4 !important;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #777 !important;
 }
 
 .intro-message {
