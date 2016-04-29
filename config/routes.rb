@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   devise_for :users
 
   get '/admin_index' => 'snippets#admin_index'
+  get '/terms' => 'welcome#terms_of_service'
+  get '/privacy' => 'welcome#privacy'
+  get '/about' => 'welcome#about'
+  get '/how-it-works' => 'welcome#how_it_works'
+  get '/archives' => 'articles#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

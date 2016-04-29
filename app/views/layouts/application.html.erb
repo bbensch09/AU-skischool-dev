@@ -3,6 +3,7 @@
 <head>
   <title>ShareTheEconomy.com</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="bootstrap/css/agency.css" rel="stylesheet">
   <meta charset="UTF-8">
   <link rel="icon" type="image/png" href="https://s3.amazonaws.com/sharetheeconomy/STE-favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -41,14 +42,13 @@
           <li><a href="/how-it-works">How it works<span class="sr-only">(current)</span></a></li>
           <li><a href=/archives>Recent Posts</a></li>
           <li><a href=/about>About Me</a></li>
-          <li><a href="/subscribe">Subscribe to updates</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
           <li>  <a class="signed-in-nav" href=# ><%= current_user.email %></a> </li>
           <li> <%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
           <%else%>
-          <li> <%= link_to 'Sign up', new_user_registration_path %></li>
+          <li> <%= link_to 'Subscribe to updates', new_user_registration_path %></li>
           <li> <%= link_to 'Log in', new_user_session_path %></li>
           <%end%>
         </ul>
@@ -87,7 +87,9 @@
     </div>
     <% end %>
   </div>
+  <div class="content-container">
   <%= yield %>
+  </div>
 </div>
 
     <!-- Footer -->
@@ -101,15 +103,15 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Terms & Conditions</a>
+                            <a href="/services">Terms & Conditions</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Privacy Policy</a>
+                            <a href="/privacy">Privacy Policy</a>
                         </li>
                     </ul6
                     <p class="copyright text-muted small">Copyright &copy; Rent Masters, LLC 2016. All Rights Reserved</p>

@@ -48,6 +48,14 @@ $black: #0F0F0D;
   padding-left: 0vw !important;
   background-color: white;
 }
+.content-container{
+  width: 90vw;
+  min-height: 100vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-left: 10px;
+/*  border-left: 1px solid #9A9C9F; */
+}
 
 .sticky-header {
     /*top: 100px;*/
