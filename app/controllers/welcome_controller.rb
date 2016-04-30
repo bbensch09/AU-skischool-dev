@@ -10,6 +10,7 @@ class WelcomeController < ApplicationController
   end
 
   def about
+    GoogleAnalyticsApi.new.event('subscriber', 'signup', params[:ga_client_id])
   end
 
   def how_it_works

@@ -6,6 +6,7 @@
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
+    <%= hidden_field_tag 'ga_client_id', '', :class => 'ga-client-id' %>
   </div>
 
   <div class="field">

@@ -11,6 +11,8 @@ class User < ActiveRecord::Base
   def send_admin_notification
       @user = User.last
       UserMailer.new_user_signed_up(@user).deliver_now
+      #reference guide: http://blog.deveo.com/server-side-google-analytics-event-tracking-with-rails/
+      # GoogleAnalyticsApi.new.event('subscriber', 'signup', params[:ga_client_id])
   end
 
   def profile_bonus
