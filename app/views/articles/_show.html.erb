@@ -14,10 +14,10 @@
 
 <div class="content-area col-lg-12 col-sm-6">
   <%= raw(@article.article_content) %>
-  <hr>
-  <div class="cta-container">
-    <a href="https://www.uber.com/signup/drive/us/?invite_code=vwhyu" class="btn btn-success">Drive for Uber</a>
+  <div class="cta-container center">
+    <a href="https://www.uber.com/signup/drive/us/?invite_code=vwhyu" class="btn btn-large btn-success">Drive for Uber</a>
   </div>
+  <hr>
 
 <% if user_signed_in? && (current_user.email == "bbensch@gmail.com" || current_user.email == "abensch66@gmail.com") %>
     <%= link_to edit_article_path(@article), class:"btn btn-default" do %>
