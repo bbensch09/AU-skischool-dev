@@ -2,17 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@media screen and (max-width:767px) {
+    .above-nav-header {
+        text-align: center;
+        background: url("STE-header-small.png") no-repeat center center;
+        background-size: contain;
+        height:100px;
+    }
+
+}
+@media screen and (min-width:767px) {
+    .above-nav-header {
+        text-align: center;
+        color: #f8f8f8;
+        background: url("STE-header2.png") no-repeat center center;
+        /*background-size: cover;*/
+        height:100px;
+    }
+}
 .lead {
     font-size: 18px;
     font-weight: 400;
-}
-
-.above-nav-header {
-    text-align: center;
-    color: #f8f8f8;
-    background: url("STE-header2.png") no-repeat center center;
-    /*background-size: cover;*/
-    height:100px;
 }
 .navbar {
     margin-bottom: 0px !important;
