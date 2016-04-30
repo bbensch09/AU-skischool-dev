@@ -6,6 +6,12 @@ class User < ActiveRecord::Base
   # Also need to reactivate :confirmable to resume email confirmations
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :lockable, :timeoutable#, :confirmable
+   after_create :send_admin_notification
+
+  def send_admin_notification
+      @user = User.last
+      UserMailer.new_user_signed_up(@user).deliver_now
+  end
 
   def profile_bonus
     profile_bonus = 0
