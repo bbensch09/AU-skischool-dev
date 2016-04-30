@@ -50,10 +50,10 @@ $black: #0F0F0D;
 }
 .content-container{
   width: 90vw;
+  max-width: 1600px;
   min-height: 100vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  padding-left: 10px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 /*  border-left: 1px solid #9A9C9F; */
 }
 
@@ -93,4 +93,10 @@ $black: #0F0F0D;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff !important;
+}
+.footer{
+  margin-left: 0vw;
+}
+.copyright {
+  text-align: center
 }
