@@ -17,7 +17,6 @@
   <div class="cta-container center">
     <a href="/uber-sign-up" class="btn btn-large btn-success">Become an Uber Driver</a>
   </div>
-  <hr>
 
 <% if user_signed_in? && (current_user.email == "bbensch@gmail.com" || current_user.email == "abensch66@gmail.com") %>
     <%= link_to edit_article_path(@article), class:"btn btn-default" do %>
