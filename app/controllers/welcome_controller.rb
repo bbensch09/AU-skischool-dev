@@ -10,8 +10,10 @@ class WelcomeController < ApplicationController
   end
 
   def about
-    GoogleAnalyticsApi.new.event('test_category', 'test_action', params[:ga_client_id])
-    puts"GA event tracking sent"
+    # GoogleAnalyticsApi.new.event('browsing', 'view_about_me')
+    # strangely if the ga_client_id isn't available it doesn't seem to log the event at all...?
+    # GoogleAnalyticsApi.new.event('test_category', 'test_action', params[:ga_client_id])
+    # puts"GA event tracking sent"
   end
 
   def how_it_works

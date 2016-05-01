@@ -13,7 +13,8 @@ class GoogleAnalyticsApi
     }
 
     begin
-      RestClient.get(GOOGLE_ANALYTICS_SETTINGS[:endpoint], params: params, timeout: 4, open_timeout: 4)
+      # puts "attempt RestClient call"
+      RestClient.get(GOOGLE_ANALYTICS_SETTINGS[:endpoint], params: params, timeout: 10, open_timeout: 10)
       # puts"RestClient get request triggered."
       return true
     rescue  RestClient::Exception => rex

@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
       @user = User.last
       UserMailer.new_user_signed_up(@user).deliver_now
       #reference guide: http://blog.deveo.com/server-side-google-analytics-event-tracking-with-rails/
-      GoogleAnalyticsApi.new.event('subscriber', 'signup', params[:ga_client_id])
+      GoogleAnalyticsApi.new.event('subscriber', 'signup')
   end
 
   def profile_bonus
