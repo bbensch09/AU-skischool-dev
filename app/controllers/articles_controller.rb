@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
 
   def uber_redirect
     GoogleAnalyticsApi.new.event('referral', 'uber-clickthrough')
-    redirect_to "https://www.uber.com/signup/drive/us/?invite_code=vwhyu"
+    # redirect_to "https://www.uber.com/signup/drive/us/?invite_code=vwhyu"
+    redirect_to "https://get.uber.com/drive/?invite_code=vwhyu"
   end
 
   # GET /articles
