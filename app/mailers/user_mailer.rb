@@ -10,4 +10,8 @@ class UserMailer < ApplicationMailer
     mail(to: "bbensch@gmail.com", subject: "#{user.email} has registered for ShareTheEconomy!")
   end
 
+  def potential_referral
+    mail(to: "bbensch@gmail.com", subject: "Someone has clicked on your referral link!")
+  end
+
 end
