@@ -1,6 +1,11 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
+  def uber_redirect
+    GoogleAnalyticsApi.new.event('referral', 'uber-clickthrough')
+    redirect_to "https://www.uber.com/signup/drive/us/?invite_code=vwhyu"
+  end
+
   # GET /articles
   # GET /articles.json
   def index

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/about' => 'welcome#about'
   get '/how-it-works' => 'welcome#how_it_works'
   get '/archives' => 'articles#index'
+  get '/uber-sign-up' => 'articles#uber_redirect'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
