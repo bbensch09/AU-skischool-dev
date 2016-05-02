@@ -5,7 +5,7 @@
 @media screen and (max-width:767px) {
     .above-nav-header {
         text-align: center;
-        background: url("STE-header-small.png") no-repeat center center;
+        background: url("https://s3.amazonaws.com/sharetheeconomy/STE-header-small.png") no-repeat center center;
         background-size: contain;
         height:100px;
     }
@@ -15,7 +15,7 @@
     .above-nav-header {
         text-align: center;
         color: #f8f8f8;
-        background: url("STE-header2.png") no-repeat center center;
+        background: url("https://s3.amazonaws.com/sharetheeconomy/STE-header2.png") no-repeat center center;
         /*background-size: cover;*/
         height:100px;
     }
