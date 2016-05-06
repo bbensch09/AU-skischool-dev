@@ -5,7 +5,7 @@
 @media screen and (max-width:767px) {
     .above-nav-header {
         text-align: center;
-        background: url("https://s3.amazonaws.com/fare_feedback/STE-header-small.png") no-repeat center center;
+        background: url("https://s3.amazonaws.com/farefeedback/FFB-header-mobile.png") no-repeat center center;
         background-size: contain;
         height:100px;
     }
@@ -15,8 +15,9 @@
     .above-nav-header {
         text-align: center;
         color: #f8f8f8;
-        background: url("https://s3.amazonaws.com/fare_feedback/STE-header2.png") no-repeat center center;
+        background: url("https://s3.amazonaws.com/farefeedback/FFB-header-desktop.png") no-repeat center center;
         /*background-size: cover;*/
+        background-color: #fff;
         height:100px;
     }
 }
@@ -28,7 +29,7 @@
     margin-bottom: 0px !important;
 }
 .navbar-default, .container-nav {
-    background-color: #4285f4 !important;
+    background-color: #4f4b4d !important;
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff !important;
@@ -39,14 +40,15 @@
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 3em;
+    text-align: center
 }
 
 .intro-divider {
@@ -388,4 +390,15 @@ p.copyright {
 }
 .feature_steps_title{
     font-size: 1.3em;
+}
+.list-inline>li {
+    margin-left: 35vw;
+}
+.cvp-boxes{
+    border: 1px solid gray;
+    height: 400px;
+}
+.img-cvp{
+    height:200px !important;
+    margin:auto;
 }
