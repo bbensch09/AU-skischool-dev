@@ -10,7 +10,7 @@ class Ckeditor::Picture < Ckeditor::Asset
               :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
               :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
               },
-           :bucket => 'sharetheeconomy',
+           :bucket => 'farefeedback',
            :url => ':s3_domain_url',
            :path => '/:class/:attachment/:id_partition/:style/:filename',
            :s3_host_name => 's3.amazonaws.com'

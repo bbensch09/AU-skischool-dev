@@ -17,7 +17,7 @@ Rails.application.configure do
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_host_name => 's3-us-west-2.amazonaws.com',
-  :bucket => 'sharetheeconomy'
+  :bucket => 'farefeedback'
   }
 
   #GMAIL CONFIG
@@ -32,7 +32,7 @@ Rails.application.configure do
     domain: "gmail.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "sharetheeconomy@gmail.com",
+    user_name: "farefeedback16@gmail.com",
     password: ENV["GMAIL_PASSWORD"]
   }
 
