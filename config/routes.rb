@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  get 'users/create'
+
   mount Ckeditor::Engine => '/ckeditor'
   resources :articles
   resources :profiles
   resources :snippets
-  devise_for :users
+  resources :users
+  # devise_for :users
 
   get '/admin_index' => 'snippets#admin_index'
   get '/terms' => 'welcome#terms_of_service'

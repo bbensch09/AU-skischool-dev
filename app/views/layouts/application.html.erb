@@ -54,13 +54,10 @@
           <li><a href=/about>About Us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-          <li>  <a class="signed-in-nav" href=# ><%= current_user.email %></a> </li>
-          <li> <%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
-          <%else%>
-          <li> <%= link_to 'Subscribe to updates', new_user_registration_path %></li>
-          <li> <%= link_to 'Log in', new_user_session_path %></li>
-          <%end%>
+          <li> <%= link_to 'Sign up', new_user_path %></li>
+          <li>
+            <!-- %= link_to 'Log in', new_user_session_path %> -->
+          </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

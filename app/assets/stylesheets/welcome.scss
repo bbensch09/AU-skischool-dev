@@ -392,7 +392,7 @@ p.copyright {
     font-size: 1.3em;
 }
 .list-inline>li {
-    margin-left: 35vw;
+    margin-left: 0%;
 }
 .cvp-boxes{
     border: 1px solid gray;
@@ -401,4 +401,8 @@ p.copyright {
 .img-cvp{
     height:200px !important;
     margin:auto;
+}
+.signup-cta{
+    margin-top:20vh;
+    margin-left: auto;
 }

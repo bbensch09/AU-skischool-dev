@@ -28,26 +28,22 @@
 
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <div class="field">
     <%= f.email_field :email, autofocus: true, class:"input-group input-group-lg", placeholder:"Enter Email"  %>
     <%= hidden_field_tag 'ga_client_id', '', :class => 'ga-client-id' %>
   </div>
-
-<!--   <div class="hidden">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="hidden">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div> -->
 
   <div class="actions">
     <%= f.submit "Get Early Access", class:"btn btn-purple btn-lg" %>
