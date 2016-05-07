@@ -415,10 +415,25 @@ p.copyright {
     display: inline !important;
 }
 .input-group-lg{
-    height: 46px;
+    height: 64px;
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 32px;
     line-height: 1.3333333;
+}
+.btn-group-lg>.btn, .btn-lg {
+    font-size: 30px !important;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.btn-signup{
+    color: #333;
+    background-color: #34f209;
+    border-color: #ccc;
+}
+.btn-signup:hover{
+    color: #fff !important;
+    background-color: #000;
+    border-color: #ccc;
 }
 .hero-bg{
     background-color: rgba(255, 0, 191,.5);

@@ -43,18 +43,18 @@ $black: #0F0F0D;
 
 .container-fluid {
   width: 100vw;
-  max-width: 1600px;
+  max-width: 2000px;
   padding-right: 0vw !important;
   padding-left: 0vw !important;
   background-color: white;
 }
 .content-container{
-  width: 90vw;
-  max-width: 1600px;
+  width: 100vw;
+  /*max-width: 1600px;*/
   min-height: 100vh;
-  padding-left: 5vw;
+/*  padding-left: 5vw;
   padding-right: 5vw;
-/*  border-left: 1px solid #9A9C9F; */
+  border-left: 1px solid #9A9C9F; */
 }
 
 .sticky-header {
