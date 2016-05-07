@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   # Need to activate Omniauthabl to use FB still :omniauthable
   # Also need to reactivate :confirmable to resume email confirmations
   # devise :registerable, :rememberable, :trackable, :validatable, :lockable, :timeoutable#, :confirmable, :database_authenticatable, :recoverable,
-   # after_create :send_admin_notification
+  after_create :send_admin_notification
 
   def send_admin_notification
       @user = User.last
