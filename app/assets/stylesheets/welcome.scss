@@ -99,6 +99,13 @@
     .btn-hero {
     font-size: 28px !important;
     }
+    .col-sm-maxwidth form .input-group, .col-sm-maxwidth form .btn-signup{
+        width:100%;
+        text-align: center;
+    }
+    .col-sm-maxwidth{
+        padding-right: 0px !important;
+    }
 }
 
 .network-name {
