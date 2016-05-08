@@ -64,13 +64,23 @@
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.btn-hero {
+  padding: 20px 28px;
+  font-size: 36px;
+  line-height: 2 !important;
+  border-radius: 12px !important;
+  background-color: #ff00bf;
+  color: #fff !important;
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
+        padding-top:20px;
     }
 
     .intro-message > h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     ul.intro-social-buttons > li {
@@ -85,6 +95,9 @@
 
     .intro-divider {
         width: 100%;
+    }
+    .btn-hero {
+    font-size: 28px !important;
     }
 }
 
