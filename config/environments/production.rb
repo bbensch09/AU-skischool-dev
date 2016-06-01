@@ -72,7 +72,7 @@ Rails.application.configure do
   }
 
   #GMAIL CONFIG
-  config.action_mailer.default_url_options = { :host => 'stormy-temple-2489.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'bensch-associates.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true #should change to false once tested on Heroku
@@ -80,10 +80,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "farefeedback.herokuapp.com",
+    domain: "bensch-associates.herokuapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "farefeedback16@gmail.com",
+    user_name: "bbensch@gmail.com",
     password: ENV["GMAIL_PASSWORD"]
   }
 

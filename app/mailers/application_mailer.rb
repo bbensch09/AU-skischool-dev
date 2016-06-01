@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'farefeedback16@gmail.com',
-    cc: 'farefeedback16@gmail.com'
+  default from: 'bbensch@gmail.com',
+    cc: 'bbensch@gmail.com'
   layout 'mailer'
 end

@@ -7,11 +7,11 @@ class UserMailer < ApplicationMailer
 
   def new_user_signed_up(user)
     @user = user
-    mail(to: "farefeedback16@gmail.com", subject: "#{user.email} has registered for fare_feedback!")
+    mail(to: "bbensch@gmail.com", subject: "#{user.email} has registered for Bensch & Associates!")
   end
 
   def potential_referral
-    mail(to: "farefeedback16@gmail.com", subject: "Someone has clicked on your referral link!")
+    mail(to: "bbensch@gmail.com", subject: "Someone has clicked on your referral link!")
   end
 
 end
