@@ -5,7 +5,7 @@
 @media screen and (max-width:767px) {
     .above-nav-header {
         text-align: center;
-        background: url("https://s3.amazonaws.com/farefeedback/FFB-header-mobile.png") no-repeat center center;
+        background: url("https://s3.amazonaws.com/bensch-associates/BA-header-mobile.png") no-repeat center center;
         background-size: contain;
         height:100px;
         z-index: 4;
@@ -16,8 +16,7 @@
     .above-nav-header {
         text-align: center;
         color: #f8f8f8;
-        background: url("https://s3.amazonaws.com/farefeedback/FFB-header-desktop.png") no-repeat center center;
-        /*background-size: cover;*/
+        background: url("https://s3.amazonaws.com/bensch-associates/BA-header-desktop.png") no-repeat center center;
         background-color: #fff;
         height:100px;
         z-index: 4;
@@ -69,7 +68,7 @@
   font-size: 36px !important;
   line-height: 2 !important;
   border-radius: 12px !important;
-  background-color: #ff00bf;
+  background-color: #4285F4;
   color: #fff !important;
 }
 
@@ -447,7 +446,7 @@ p.copyright {
 }
 .btn-signup{
     color: #333;
-    background-color: #34f209;
+    background-color: #FBBC05;
     border-color: #ccc;
 }
 .btn-signup:hover{
@@ -456,7 +455,7 @@ p.copyright {
     border-color: #ccc;
 }
 .hero-bg{
-    background-color: rgba(255, 0, 191,.5);
+    background-color: #4285F4;
     height: 100vh;
     top: 0;
     left:-5vw;

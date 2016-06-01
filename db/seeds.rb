@@ -10,10 +10,10 @@ User.delete_all
 Profile.delete_all
 Snippet.delete_all
 
-User.create!({
-  email:"bbensch@gmail.com",
-  password:"bb4ste109"
-  })
+# User.create!({
+#   email:"bbensch@gmail.com",
+#   password:"bb4ste109"
+#   })
 
 #CREATE LIST OF OPTIONS TO RANDOMLY SELECT FROM
 # age_array = (18...65).to_a
