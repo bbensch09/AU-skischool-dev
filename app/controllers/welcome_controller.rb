@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
+      layout false
+      layout 'application', :except => :new_instructor
+
   def index
     @article = Article.last
   end
@@ -7,6 +10,9 @@ class WelcomeController < ApplicationController
   end
 
   def privacy
+  end
+
+  def new_instructor
   end
 
   def about
