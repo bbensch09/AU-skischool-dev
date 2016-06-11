@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
       layout false
-      layout 'application', :except => :new_instructor
+      # layout 'application', :except => :new_instructor
 
   def index
     @article = Article.last
